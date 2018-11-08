@@ -1,0 +1,37 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true,
+    "browser": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "indent": [ "error", 2 ],
+    "linebreak-style": [ "error", "unix" ],
+    "quotes": [ "error", "single" ],
+    "semi": [ "error", "always" ],
+
+    "new-cap": "off",
+
+    "class-methods-use-this": "off",
+    "no-else-return": "off",
+    "max-len": "off",
+    "no-multiple-empty-lines": "off",
+    "no-trailing-spaces": "off",
+    "no-unexpected-multiline": "off",
+
+    "react/display-name": "off"
+  }
+}
